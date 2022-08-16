@@ -1,0 +1,20 @@
+CONFIG_NAME: 'LASER'
+
+DATASET_NAME: 'random_ObservationData_Combined_QA_comments.csv' 
+DATA_DIR: '../data/' 
+GPU_ID: 0
+AUG_DATA_NAME: ''
+EMBEDDING_DIR: '~/Projects/Text_Classification/Thisted_Kommune/Thisted-Systematic/thisted_observation_classification/observation_classifier/models/all_embeddings.npy'
+
+TRAIN:
+    
+    MAX_EPOCH: 1000 
+    LR: 0.01
+    GAMMA: 0.01 
+    TEST_RATE: 10
+    BATCH_SIZE : 128
+        
+TEXT:
+    
+    EMBEDDING_MODEL: 'laser'
+    

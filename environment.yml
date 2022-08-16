@@ -1,0 +1,22 @@
+# run: conda env create --file environment.yml
+dependencies:
+- python=3.8
+- anaconda  # seems this is required to run with jupyter
+- pip
+- pip:
+  # works for regular pip packages
+  - requests
+  - six
+  - starlette
+  - pydantic
+  - loguru
+  - numpy
+  - plotly
+  - pytest
+  - pandas
+  - uvicorn
+  - pyarrow
+  - matplotlib
+  - fastapi
+  - protobuf
+
